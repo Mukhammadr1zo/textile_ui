@@ -1,0 +1,124 @@
+.catalog {
+    padding: 100px 0;
+}
+
+.catalog__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog__title {
+    margin-bottom: 13px;
+    font-family: 'Pliska';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 50px;
+}
+
+.catalog__desc {
+    width: 415px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    opacity: 0.8;
+}
+
+.catalog__list {
+    display: flex;
+    flex-direction: column;
+    max-width: 772px;
+    width: 100%;
+}
+
+.catalog__item {
+    padding: 27px 0;
+    border-top: 1px solid #D6D6CE;
+    border-bottom: 1px solid #D6D6CE;
+    border-collapse: collapse;
+    margin-top: -1px;
+    cursor: pointer;
+    position: relative;
+}
+.catalog__item div{
+    display: flex;
+    align-items: center;
+}
+
+.catalog__item span {
+    margin-right: 150px;
+    font-family: 'Pliska';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+}
+
+.catalog__item h3 {
+    font-family: 'Pliska';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+}
+
+.catalog__item p {
+    margin-left: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: right;
+}
+
+.hover-image {
+    position: absolute;
+    display: none;
+    width: 200px;
+    height: 200px;
+    z-index: 999;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 990px) {
+    .catalog {
+        padding: 75px 0;
+    }
+
+    .catalog__list {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .catalog__container {
+        flex-direction: column;
+    }
+
+    .catalog__container div:nth-child(1) {
+        margin-bottom: 120px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .catalog__container div:nth-child(1) {
+        margin-bottom: 74px;
+    }
+
+    .catalog__title, .catalog__desc {
+        text-align: center;
+    }
+
+    .catalog__desc {
+        width: 100%;
+    }
+
+    .catalog__item span {
+        margin-right: 53px;
+    }
+
+    .catalog__item p {
+        display: none;
+    }
+}
+
