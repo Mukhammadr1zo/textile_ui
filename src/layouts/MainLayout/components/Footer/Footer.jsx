@@ -45,7 +45,7 @@ const Footer = () => {
                                 <p className="shadow">Copyright ©2023</p>
                                 <p className="shadow">All rights received</p>
                             </div>
-                            <p style={{ color: "white" }}><span className="shadow">Created by :</span> S-orca </p>
+                            <p style={{ color: "white" }}><span className="shadow">Created by :</span> M-dev </p>
                         </div>
                     </div>
                 </div>
